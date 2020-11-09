@@ -1,0 +1,30 @@
+{
+    "name": "oyfy\/weather",
+    "description": "a weather SDK",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "ouyangfy",
+            "email": "824029856@qq.com"
+        }
+    ],
+    "require": {
+        "guzzlehttp/guzzle": "^7.2"
+    },
+    "autoload": {
+        "psr-4": {
+            "Oyfy\\Weather\\": "src"
+        }
+    },
+    "extra":{
+        "laravel":{
+            "providers":[
+                "Oyfy\\Weather\\ServiceProvider"
+            ]
+        }
+    },
+    "require-dev": {
+        "phpunit/phpunit": "^8.5",
+        "mockery/mockery": "^1.3"
+    }
+}
